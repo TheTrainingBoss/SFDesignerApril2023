@@ -14,7 +14,8 @@
                 <h3>
                     <a @Html.InlineEditingFieldAttributes("Title", "ShortText") href="@navigateUrl">@item.Fields.Title</a>
                 </h3>
-                <div>From LinoList Template</div>
+                <div>Region: @item.Fields.Region</div>
+                <img src="@item.Fields.Thumbnail.Fields.MediaUrl" width="200px" height="200px">  </img>
                 <div>
                     <span class="text-muted">
                         @item.GetDateTime("PublicationDate", "MMM d, yyyy, HH:mm tt")
